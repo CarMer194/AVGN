@@ -18,4 +18,4 @@ skimage==0.0
 scikit_learn==0.20.0
 tensorflow>1.11.0
 hdbscan==0.8.13
-umap-learn==0.3.8 //Download the github repository and install manually. https://github.com/lmcinnes/umap
+#umap-learn==0.3.8 //Download the github repository and install manually. https://github.com/lmcinnes/umap
