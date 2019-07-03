@@ -49,7 +49,7 @@ Currently there are two example birds - **Cassins vireo**, and **Bengalese finch
 
 To use these notebooks on your own dataset, clone this repo and copy the methods from one of the examples. You will need to change the parameters as well as parse date/time information in `1.0-segment-song-from-wavs.ipynb` yourself. 
 
-The GAIA autoencoder is not currently implemented in AVGN. I have a [GAIA specific repo](https://github.com/timsainb/GAIA) with that implementation, that will probably need some adjustments to work with AVGN. Feel free to try to pull them together and make a PR. 
+The GAIA autoencoder is not currently implemented in AVGN. I have a [GAIA specific repo](https://github.com/timsainb/GAIA) with that implementation, that will probably need some adjustments (like the multithreading implementation) to work with AVGN. Feel free to try to pull them together and make a PR. 
 
 *Some of these functions use a lot of RAM (for example loading your whole dataset into RAM). If RAM is an issue for you, try using the data_interator from https://github.com/timsainb/GAIA*
 
@@ -58,7 +58,15 @@ Installation
 
 to install run python `setup.py install`
 
+for more details go to ../docs/getting-started.rst  file.
+
 ---
+
+Hardware requirement
+--------------------
+-An NVIDIA CUDA Graphic card with 3.0+ compute capacity for an old version of tensorflow, or 6.0+ capacity for later versions, if you want to process with GPU.
+
+-16Gb of RAM.
 
 
 Data references
@@ -73,9 +81,9 @@ Katahira K, Suzuki K, Kagawa H, Okanoya K (2013) Data from: A simple explanation
 Arriaga, J. G., Cody, M. L., Vallejo, E. E., & Taylor, C. E. (2015). Bird-DB: A database for annotated bird song sequences. Ecological informatics, 27, 21-25. http://taylor0.biology.ucla.edu/birdDBQuery/
 
 #### TODO
-- rewrite functions and add docstrings
-- make less RAM heavy
-- add other animal vocalization datasets
+- rewrite functions and add docstrings.
+- make less RAM heavy.
+- add other animal vocalization datasets.
 - ...
 
 
